@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .navbar a {
+            color: gold;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        .Logo {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.7);
+        }
+
+        .aboutcontainer {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .about1, .about2, .about3, .about4 {
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .about1:hover, .about2:hover, .about3:hover, .about4:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.8);
+        }
+
+        .textabout, .textabout1 {
+            line-height: 1.8;
+        }
+
+        h1 {
+            color: gold;
+            text-align: center;
+            border-bottom: 2px solid gold;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: gold;
+            font-weight: bold;
+        }
+
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .aboutcontainer {
+                padding: 20px;
+            }
+
+            .about1, .about2, .about3, .about4 {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Help us.html">Help us</a>
+        <a href="Support us.html">Support us</a>
+    </div>
+
+    <div class="Logo">
+        <img src="logo.png" alt="Company Logo" class="logo">
+    </div>
+
+    <div class="aboutcontainer">
+        <div class="about1">
+            <div class="textabout">
+                <h1>Audi Parts</h1>
+                <p><span class="highlight">Exterior Parts:</span> Hood, bumpers, fenders, doors, headlights, and more.</p>
+                <p><span class="highlight">Interior Parts:</span> Digital instrument cluster, leather seats, infotainment system, and wireless charging pad.</p>
+                <p><span class="highlight">Engine & Mechanical Parts:</span> Turbocharged engines, manual gearbox, and advanced braking systems.</p>
+            </div>
+        </div>
+
+        <div class="about2">
+            <div class="textabout">
+                <h1>Sportback Models</h1>
+                <p>
+                    ✅ <b>Audi A1 Sportback:</b> Compact yet premium with efficient engine options.  
+                    ❌ Limited rear seat space.  
+                </p>
+                <p>
+                    ✅ <b>Audi A3 Sportback:</b> Spacious with a tech-filled interior.  
+                    ❌ Less engaging than some competitors.  
+                </p>
+                <p>
+                    ✅ <b>Audi A5 Sportback:</b> Stylish fastback design with strong performance.  
+                    ❌ Rear visibility can be limited.  
+                </p>
+            </div>
+        </div>
+
+        <div class="about3">
+            <div class="textabout">
+                <h1>Avant Models (Wagons)</h1>
+                <p>
+                    ✅ <b>Audi RS4 Avant:</b> Powerful yet practical for everyday use.  
+                    ❌ Competitors offer sharper dynamics.  
+                </p>
+                <p>
+                    ✅ <b>Audi RS6 Avant:</b> Blistering speed with impressive luxury.  
+                    ❌ Very expensive and fuel-hungry.  
+                </p>
+            </div>
+        </div>
+
+        <div class="about4">
+            <h1>Overall Verdict</h1>
+            <div class="textabout1">
+                <p> 
+                    🚗 For a small premium hatch: <b>A1 Sportback</b>  
+                    🚙 For balanced economy and space: <b>A3 Sportback</b>  
+                    🏎️ For stylish coupe-like practicality: <b>A5 / A7 Sportback</b>  
+                    🚨 For performance wagons: <b>RS4 / RS6 Avant</b>  
+                    🔥 For sportiness without going full RS: <b>S4 / S5</b>  
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
